@@ -24,9 +24,9 @@ while True:
     screenshot = pyautogui.screenshot()
     pixel_color = screenshot.getpixel((438,545))
     
-    if previous_color is not None and pixel_color != previous_color:
+    if previous_color != None and pixel_color != previous_color:
         print('SIT ledig')
-        #send_email()
+        send_email()
     
     previous_color = pixel_color
     
